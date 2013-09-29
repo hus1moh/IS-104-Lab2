@@ -1,39 +1,15 @@
 ﻿<html>
 <head>
-  <title>Første </title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <script type="text/javascript">
-
-var textBlocks = new Array( 
-'Select from the list to change this box', 
-'Du har selektert AppleScript.', 
-'Du har selektert Asp.','Du har selektert Basic.','Du har selektert C.','Du har selektert C++.','Du har selektert Clojure.',
-'Du har selektert Cobol.','Du har selektert ColdFusion.','Du har selektert Erlang.','Du har selektert Fortrean.','Du har selektert Haskell.',
-'Du har selektert Java.','Du har selektert Javascript.','Du har selektert Lisp.','Du har selektert Perl.','Du har selektert Python.',
-'Du har selektert Ruby');
-
-function changeText(elemid) { 
-var ind = document.getElementById(elemid).selectedIndex; 
-document.getElementById("display").innerHTML=textBlocks[ind]; 
-} 
-function showText(show,hide)
-{
-    document.getElementById(show).className = "show";
-    document.getElementById(hide).className = "hide";
-}
-</script>
+ <link rel="stylesheet" type="text/css" href="style.css" />
+ <script type="text/javascript" src="proglangs.js"></script>
+<title>
+	Hovedside
+</title>
 </head>
-
 <body>
-
-<!-- Site navigation menu -->
-<ul class="navbar">
-  <li><a href="proglangs.html">Hjem</a>
-  <a onclick="showText('text1','text2')" href="javascript:void(0);">Kronologisk</a>
-<a onclick="showText('text2','text1')" href="javascript:void(0);">Hierarkisk</a>
-<a onclick="showText('text3','text2')" href="javascript:void(0);">Alphabetisk</a>
-</ul>
-<b>Velg programmeringspråk</b>
+<div id="Sentrere">
+<div id="Topp">
+<b>Velg programmeringspråk
 <form> 
 <select id="whatever" onChange="changeText('whatever');"> 
 <option value="0">Select</option> 
@@ -56,19 +32,23 @@ function showText(show,hide)
 <option value="17">Ruby</option>  
 </select><br> 
 </form> 
-  
-<!-- Main content -->
+</div>
+<div id="Menylinje" class="auto-style1">
+	<ul>
+          <a href="proglangs.html">Hjem</a><br>
+          <a href="javascript:AlertIt();">Kronologisk</a><br>
+          <a href="javascript:AlertIt1();">Hierarkisk</a><br>
+          <a href="javascript:AlertIt2();">Alphapetisk</a><br>
+	</ul>
+	</div>
+<div id="Innhold">
 <h1>Programmeringsspråk hva er det?</h1>
 <div id="display">Velkommen til en mystisk verden av programmeringsspråk!</div> 
-
-<input type="text" name="color" id="color" style='display:none;'/>
-<div id="text1" class="hide"> Kronologisk side er under konstruksjon vennligst kom tilbake senere! </div>
-<div id="text2" class="hide"> Obs den side er ikke lagt ferdig!</div>
-<div id="text3" class="hide"> Obs Obs obs ikke den heller</div>
-
-
-<address>Siden ble lagt 13 September <br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<address>Siden ble lagt 29 September <br>
   av Husein.</address>
-
+	</div>
+</div>
 </body>
+
 </html>

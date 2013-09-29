@@ -1,34 +1,70 @@
-body {
-  padding-left: 11em;
-  font-family: Georgia, "Times New Roman",
-        Times, serif;
-  color: purple;
-  background-color: #d8da3d }
-ul.navbar {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 2em;
-  left: 1em;
-  width: 9em }
-h1 {
-  font-family: Helvetica, Geneva, Arial,
-        SunSans-Regular, sans-serif }
-ul.navbar li {
-  background: white;
-  margin: 0.5em 0;
-  padding: 0.3em;
-  border-right: 1em solid black }
-ul.navbar a {
-  text-decoration: none }
-a:link {
-  color: blue }
-a:visited {
-  color: purple }
+#Topp {
+	background-color: #B67721;
+	position: absolute;
+	width: 896px;
+	height: 200px;
+	top: 10px;
+	left: 10px;
+	
+}
+#Menylinje {
+	position: absolute;
+	background-color: #B67721;
+	width: 200px;
+	height: 650px;
+	top: 210px;
+	left: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+}
+#Innhold {
+	background-color: #B67721;
+	position: absolute;
+	width: 696px;
+	height: 650px;
+	top: 210px;
+	left: 210px;
+}
+#Sentrere {
+	position: relative;
+	width: 900px;
+	height: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#Menylinje ul {
+	padding:6px;
+	margin:5px;
+	list-style-type:none;
+}
+#Menylinje li {
+	width:190px;
+	height:50px;
+}
+#Menylinje a {
+	margin:2px;
+	font-family:"Courier New", Courier, monospace;
+	font-size:17px;
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+	letter-spacing: 0.15em;
+	display: block;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 100px;
+	height: 50px;
+	padding-top: 12px;
+	padding-left: 10px;
+	color:blue;
+}
+#Menylinje a:hover{
+	background-repeat:no-repeat;
+	color:green;
+	margin:1px;	
+}
 address {
-  margin-top: 1em;
-  padding-top: 1em;
-  border-top: thin dotted }
-  div.hide { display:none; [your properties]; }
-div.show { [your properties]; }
+left:210px;
+top:450px;
+
+}
