@@ -80,27 +80,33 @@
 </select><b></b><br>
 <b>Velg programmeringspråk</b>
 <form> 
-<select id="liste" onChange="changeText('liste');"> 
-<option value="0">Select</option> 
-<option value="1">AppleScript</option> 
-<option value="2">Asp</option> 
-<option value="3">Basic</option> 
-<option value="4">C</option> 
-<option value="5">C++</option> 
-<option value="6">Clojure</option>
-<option value="7">Cobol</option> 
-<option value="8">Coldfusion</option> 
-<option value="9">Erlang</option> 
-<option value="10">Fortrean</option> 
-<option value="11">Haskell</option> 
-<option value="12">Java</option> 
-<option value="13">Javascript</option> 
-<option value="14">Lisp</option> 
-<option value="15">Perl</option> 
-<option value="16">Python</option> 
-<option value="17">Ruby</option>  
-</select><br> 
-</form> 
-<span  output id="text">Du har ennå ikke valgt programmeringsspråk </span> 
+<form>
+<select name="velgsspraak" id="spraak" onChange="skrivTilUtdataBoks(this)">
+<option value="ActionScript">ActionScript</option>
+    <option value="AppleScript">AppleScript</option>
+    <option value="Asp">Asp</option>
+    <option value="BASIC">BASIC</option>
+    <option value="C">C</option>
+    <option value="C++">C++</option>
+    <option value="Clojure">Clojure</option>
+    <option value="COBOL">COBOL</option>
+    <option value="ColdFusion">ColdFusion</option>
+    <option value="Erlang">Erlang</option>
+    <option value="Fortran">Fortran</option>
+    <option value="Groovy">Groovy</option>
+    <option value="Haskell">Haskell</option>
+    <option value="Java">Java</option>
+    <option value="JavaScript">JavaScript</option>
+    <option value="Lisp">Lisp</option>
+    <option value="Perl">Perl</option>
+    <option value="PHP">PHP</option>
+    <option value="Python">Python</option>
+    <option value="Ruby">Ruby</option>
+    <option value="Scala">Scala</option>
+    <option value="Scheme">Scheme</option>
+  <select>
+</form>
+<span id="utdataboks">Du har ikke valgt noe programmeringsspråk enda. Velg ett fra rullegardin-listen!</span>
+
 </body>
 </html>
