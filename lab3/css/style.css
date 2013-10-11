@@ -11,6 +11,8 @@ color:blue
 	font-weight:bold;
 }
 
-.my_canvas {
+#my_canvas {
 	border: solid black;
+	width: 200px;
+	height: 200px;
 }

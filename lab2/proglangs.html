@@ -9,41 +9,47 @@
 <body>
 <div id="Sentrere">
 <div id="Topp">
-<b>Velg programmeringspråk
-<form> 
-<select id="whatever" onChange="changeText('whatever');"> 
-<option value="0">Select</option> 
-<option value="1">AppleScript</option> 
-<option value="2">Asp</option> 
-<option value="3">Basic</option> 
-<option value="4">C</option> 
-<option value="5">C++</option> 
-<option value="6">Clojure</option>
-<option value="7">Cobol</option> 
-<option value="8">Coldfusion</option> 
-<option value="9">Erlang</option> 
-<option value="10">Fortrean</option> 
-<option value="11">Haskell</option> 
-<option value="12">Java</option> 
-<option value="13">Javascript</option> 
-<option value="14">Lisp</option> 
-<option value="15">Perl</option> 
-<option value="16">Python</option> 
-<option value="17">Ruby</option>  
-</select><br> 
-</form> 
+		<form id="liste" name="liste">
+			Søk i programmeringsspråk:<select name="list" id="list">
+				<option value=" ">Velg et språk</option>
+				<option value="Actionscript">Actionscript</option>
+				<option value="Applescript">Applescript</option>
+				<option value="Asp">Asp</option>
+				<option value="BASIC">BASIC</option>
+				<option value="C">C</option>
+				<option value="C++">C++</option>
+				<option value="Clojure">Clojure</option>
+				<option value="COBOL">COBOL</option>
+				<option value="ColdFusion">ColdFusion</option>
+				<option value="Erlang">Erlang</option>
+				<option value="Fortran">Fortran</option>
+				<option value="Groovy">Groovy</option>
+				<option value="Haskell">Haskell</option>
+				<option value="Java">Java</option>
+				<option value="Javascript">Javascript</option>
+				<option value="Lisp">Lisp</option>
+				<option value="Perl">Perl</option>
+				<option value="PHP">PHP</option>
+				<option value="Python">Python</option>
+				<option value="Ruby">Ruby</option>
+				<option value="Scala">Scala</option>
+				<option value="Scheme">Scheme</option>
+			</select>
+		</form>
+		<script type="text/javascript" src="proglangs.js"></script>
+
 </div>
-<div id="Menylinje" class="auto-style1">
-	<ul>
-          <a href="proglangs.html">Hjem</a><br>
-          <a href="javascript:AlertIt();">Kronologisk</a><br>
-          <a href="javascript:AlertIt1();">Hierarkisk</a><br>
-          <a href="javascript:AlertIt2();">Alphapetisk</a><br>
-	</ul>
+<div id="Menylinje" >
+	<ul class="navbar">
+  <li><a href="proglangs.html">Hjem</a>
+  <li><a href="#" onclick="konstruksjon()">Kronologisk</a>
+  <li><a href="#" onclick="konstruksjon()">Hierarkisk</a>
+  <li><a href="#" onclick="konstruksjon()">Alfabetisk</a>
+</ul>
 	</div>
 <div id="Innhold">
 <h1>Programmeringsspråk hva er det?</h1>
-<div id="display">Velkommen til en mystisk verden av programmeringsspråk!</div> 
+<p><span id="outputbox">Velkommen til en mystisk verden av programmeringsspråk!</span></p>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<address>Siden ble lagt 29 September <br>
   av Husein.</address>
