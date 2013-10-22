@@ -1,0 +1,65 @@
+body {
+margin:0;
+padding:0;
+}
+dt {
+font-weight: bold;
+}
+address {
+float: right;
+}
+#bodyid {
+	width:415px;
+	height:500px;
+	margin:0 auto;
+	border:1px solid #3285ef; 
+}
+.glossary {
+	clear: both; 
+}
+.content {
+	height: 430px;
+	width: 415px;
+	overflow: auto; 
+	font-family: 'Arial',Verdana,Tahoma; 
+	font-size: 10pt;
+	clear: both; 
+}
+/* Definerer egenskaper for alle div objekter som ligger inne i content (bodyid) */
+.content div {
+	padding-left: 10px; /* Utfylling /padding) settes til 10px */
+	border-bottom: 1px #666666 solid; /* For adskille hver gruppe given fargen til nedre rammesiden som #666666 (grå) med 1px */
+}
+.content p.return-to-top {
+	color:#0066FF; /* Gir tekstfarge til "Tilbake til toppen" tekst */
+	text-decoration: underline; /* Teksten understrekes */
+	text-align: right; /* Teksten justeres til høyre */
+	margin-right: 10px; /* Gir margen 10px fra høyre */
+	cursor: pointer; /* Kursøren blir til en 'hånd' */
+}
+
+/* Egenskapene til den ikke-ordnede listen defineres her */
+.firstUL {
+	padding: 0px 0px 0px 10px; 
+	margin: 0px; 
+	background-color: #3285ef;
+	}
+/* I hver av listene her i firstUL */
+.firstUL li {
+	background: transparent url(bluesprite.jpg) no-repeat scroll 2px 3px;
+	display: inline; 
+	font-family: 'Arial',Verdana,Tahoma; 
+	font-size: 16pt; 
+	font-weight: bold; 
+	padding: 10px 15px 22px; 
+	line-height: 70px; 
+	cursor: pointer; /* vises hånd når mus er over */
+}
+
+/* Når man har selektert en bokstav endres utseende. Det brukes samme bilde men kun nederste delen vises.*/
+.firstUL li.selected {
+	background: transparent url(bluesprite.jpg) no-repeat scroll 2px -50px; 
+	color: #ffffff; /* font farge 'white' */
+	font-weight: bold; 
+	}
+
